@@ -1,0 +1,25 @@
+.slide-open{
+    animation: slideOpen .2s ease-in  forwards;
+}
+.slide-close{
+    animation: slideClose .1s ease-in forwards;
+}
+
+
+
+@keyframes slideOpen{
+    from{
+        width: 0;
+    }
+    to{
+        width: 60vw;
+    }
+}
+@keyframes slideClose {
+    from{
+        width: 60vw;
+    }
+    to{
+        width: 0;
+    }
+}

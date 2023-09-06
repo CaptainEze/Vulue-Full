@@ -1,0 +1,71 @@
+.card-primary{
+    box-shadow: 0 0 1px 0;
+}
+.centered{
+    text-align: center;
+}
+
+.txt-thin{
+    font-weight: 300;
+}
+.txt-std{
+    font-weight: 400;
+}
+.txt-thick{
+    font-weight: 550;
+}
+.txt-bold{
+    font-weight: 700;
+}
+.txt-heavy{
+    font-weight: 900;
+}
+
+
+.flx{
+    display: flex;
+}
+.in-flx{
+    display: inline-flex;
+}
+.flx-rw{
+    flex-direction: row;
+}
+.flx-col{
+    flex-direction: column;
+}
+.flx-rw-rev{
+    flex-direction: row-reverse;
+}
+.flx-col-rev{
+    flex-direction: column-reverse;
+}
+.flx-stretch{
+    justify-content: space-between;
+}
+
+
+/* ------- glass morphism templates ------- */
+.glass{
+    background-color: rgba(25,25,30,.1);
+}
+.thin-glass{
+    backdrop-filter: blur(2px);
+}
+.std-glass{
+    backdrop-filter: blur(4px);
+}
+.thick-glass{
+    backdrop-filter: blur(10px);
+}
+.heavy-glass{
+    backdrop-filter: blur(15px);
+}
+
+
+/* ------- standard buttons templates ------- */
+
+.btn{
+    border: none;
+    margin: .2em;
+}

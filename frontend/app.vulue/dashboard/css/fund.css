@@ -1,0 +1,50 @@
+#curr-choice-cont .head{
+    font-size: 1.2em;
+    margin-bottom: .8em;
+}
+.select-curr{
+    width: 100%;
+    padding: .8em 1.5em .8em 1em;
+    border: 1px solid #aaaaaa;
+    border-radius: .7em;
+    align-items: center;
+}
+.select-curr >span:nth-child(1){
+    align-items: center;
+    gap: .8em;
+}
+.curr-flag{
+    display: inline-block;
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+}
+.curr-sym{
+    font-size: 1.3em;
+}
+#payment-meth-cont{
+    margin-top: .5em;
+}
+#p-meth1{
+    margin-top: 1em;
+}
+#p-meth1 .head{
+    align-items: flex-start;
+}
+#p-meth1 .head .bnk-flag{
+    display: inline-block;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+}
+#p-meth1 .head>span:nth-child(1){
+    align-items: center;
+    gap: .5em;
+}
+#p-meth1 .head .recmd-banner{
+    color: #29ce08;
+    padding: .7em;
+    font-size: 1em;
+    background-color: #197f055f;
+    border-radius: .5em;
+}

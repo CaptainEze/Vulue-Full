@@ -1,0 +1,15 @@
+#main{
+    padding: 3.5em 1em;
+}
+.pre-form-info p:nth-child(1){
+    font-size: 1.5em;
+}
+#pass-hide{
+    position: absolute;
+    right: 1em;
+    top: 2.5em;
+    transition: 0.2s ease-in;
+}
+#pass-hide:hover{
+    color: #00aaff;
+}

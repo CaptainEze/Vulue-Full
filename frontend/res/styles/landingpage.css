@@ -1,0 +1,73 @@
+.message{
+    padding: 0 1em;
+}
+#message1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#message1 .mes1{
+    font-size: 1.5em;
+}
+#message1 .bg-image-hold{
+    background-image: url('../../assets/images/sprites/mes1.png');
+    display: block;
+    width: 90vw;
+    height: 115vw;
+    position: relative;
+    left: 0;
+    margin-top: -2em;
+}
+#message1 .mes2{
+    font-size: 1em;
+}
+#message1 .mes3{
+    font-size: .7em;
+    margin-top: 1em;
+}
+.call-in{
+    width: fit-content;
+    margin: 1.5em auto;
+}
+.call-in button{
+    width: 70vw;
+    min-height: 6vw;
+    padding: .5em;
+    font-size: .8em;
+    border-radius: .5em;
+}
+#message2 .bg-image-hold{
+    background-image: url('../../assets/images/sprites/mes2.png');
+    width: 80vw;
+    height: 80vw;
+    margin: .5em auto;
+}
+#message3{
+    margin-top: -2em;
+}
+#message3 .mes1{
+    font-size: 1.2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#message3 .mes2{
+    font-size: .7em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+#ups{
+    margin-top: 3em;
+    padding: 2em;
+}
+.ups{
+    height: 8em;
+    margin: .5em 0;
+    padding: 1.5em;
+}
+.ups .thumbnail{
+    display: block;
+    height: 2em;
+    width: 2em;
+    border: 1px solid green;
+}
+.ups div{
+    margin-top: 1.2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
