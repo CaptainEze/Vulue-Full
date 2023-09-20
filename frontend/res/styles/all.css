@@ -8,6 +8,12 @@
 .bg-primary{
     background: linear-gradient(135deg,#10104A,#10101F,#10101F,#111);
 } 
+.bg-black{
+    background-color: #020205;
+}
+.bg-ash{
+    background-color: #40494e;
+}
 .bg-blue{
     background-color: #4444ff;
 }
@@ -40,7 +46,7 @@
     color: #fff;
 }
 .txt-ash{
-    color: #747474;
+    color: #455A64;
 }
 .txt-blue-green{
     color: #00aaff;
@@ -59,6 +65,12 @@
 }
 .txt-green{
     color: #08a91b;
+}
+.txt-red{
+    color: #ea1b1b;
+}
+.txt-yellow{
+    color: #b3ce06;
 }
 
 .card{
@@ -207,7 +219,7 @@ header{
     height: fit-content;
     width: 100%;
     background-color: transparent;
-    border: 1px solid #aaaaff99;
+    border: 2px solid #455A64;
     border-radius: .7em;
     padding: .8em 1.3em;
     margin: 1em 0;

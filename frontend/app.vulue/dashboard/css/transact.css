@@ -1,0 +1,159 @@
+#curr-choice-cont .head{
+    font-size: 1.2em;
+    margin-bottom: .8em;
+}
+.select-curr{
+    width: 100%;
+    padding: .8em 1.5em .8em 1em;
+    border: 1px solid #aaaaaa;
+    border-radius: .7em;
+    align-items: center;
+}
+.select-curr >span:nth-child(1){
+    align-items: center;
+    gap: .8em;
+}
+.curr-flag{
+    display: inline-block;
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+}
+.curr-sym{
+    font-size: 1.3em;
+}
+#payment-meth-cont{
+    margin-top: .5em;
+    border: 1px solid whitesmoke;
+    padding: .4em;
+    border-radius: 1em;
+}
+#p-meth1{
+    margin-top: 1em;
+}
+#p-meth1 .head{
+    align-items: flex-start;
+}
+#p-meth1 .head .bnk-flag{
+    display: inline-block;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+}
+#p-meth1 .head>span:nth-child(1){
+    align-items: center;
+    gap: 1em;
+}
+#p-meth1 .head>span:nth-child(1) span:nth-child(2){
+    font-size: 1.1em;
+}
+#p-meth1 .head .recmd-banner{
+    color: #29ce08;
+    padding: .4em .6em;
+    font-size: .9em;
+    background-color: #297f065f;
+    border-radius: .5em;
+}
+#p-meth1 .pre{
+    margin-top: .1em;
+    padding: .5em;
+}
+#p-meth1 .pre p{
+    padding: .5em 0;
+    font-size: .8em;
+}
+#p-meth1 .main{
+    padding: 1em;
+}
+.bnk-name-cont, .act-no-cont{
+    align-items: center;
+    padding: .3em 0;
+}
+.bnk-name-cont > span:nth-child(1), .act-no-cont > span:nth-child(1){
+    gap: .8em;
+}
+.bnk-name-cont .banner, .act-no-cont .banner{
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+.bnk-name-cont .u,.act-no-cont .u {
+    font-size: .9em;
+}
+.bnk-name-cont .d, .act-no-cont .d{
+    font-size: 1.5em;
+}
+.bnk-name-cont button{
+    font-size: 1.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+.vulue-acct-no{
+    align-items: center;
+    gap: .5em;
+}
+.alt-payment-mthds{
+    margin: 1em auto;
+    padding: 0 1em;
+}
+.pre-alt-payment-mthds{
+    margin: 1em auto;
+}
+.alt-pymnt{
+    gap: .5em;
+    margin: .3em auto;
+    width: 100%;
+}
+.alt-pymnt .banner{
+    display: inline-block;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+}
+.alt-pymnt > span:nth-child(2){
+    font-size: .8em;
+    text-align: left;
+}
+
+.misc{
+    width: 90%;
+    height: 2em;
+    border-bottom: 1px solid #f0f7ff;
+    margin: 1em auto;
+    position: relative;
+}
+.misc p{
+    width: fit-content;
+    margin: 0 auto;
+    padding: .6em;
+    position: absolute;
+    top: .8em;
+    left: calc(50% - 1em);
+}
+.other-payment-method{
+    gap: .5em;
+}
+.other-payment-method .alt-pymnt{
+    padding: .7em;
+    border-radius: .7em;
+    gap: .7em;
+}
+.other-payment-method .alt-pymnt >span:nth-child(2){
+    gap: .5em;
+}
+.other-payment-method .p-meth, .other-payment-method {
+    font-size: 1.2em;
+}
+.continue-btn{
+    display: block;
+    width: 90vw;
+    margin: 1em 0;
+    font-size: .9em;
+    padding: .9em;
+    border-radius: .5em;
+}
+.continue-btn:focus{
+    outline: none;
+}

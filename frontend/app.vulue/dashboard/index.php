@@ -30,7 +30,7 @@
         </div>
         <section class="acc-tools flx flx-stretch">
             <div class="tool-cont">
-                <a href="" class="tool no-decor flx flx-col txt-white">
+                <a href="fund.php" class="tool no-decor flx flx-col txt-white">
                     <button class="icon-banner txt-white brdls"></button>
                     <span>Fund</span>
                 </a>
@@ -48,7 +48,7 @@
                 </a>
             </div>
             <div class="tool-cont">
-                <a href="" class="tool no-decor flx flx-col txt-white">
+                <a href="withdraw.php" class="tool no-decor flx flx-col txt-white">
                     <button class="icon-banner txt-white brdls"></button>
                     <span>Withdraw</span>
                 </a>
