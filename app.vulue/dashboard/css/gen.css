@@ -1,0 +1,30 @@
+body{
+    padding: .5em 1.3em;
+    font-family: fnt-01;
+}
+.bg-primary{
+    background: unset;
+    background-color: #000010 !important;
+}
+
+header{
+    border-bottom: 1px solid #eef;
+    text-align: center;
+    font-family: fnt-01;
+}
+header > div:nth-child(2){
+    position: relative;
+    padding-top: 1em;
+}
+.back-btn{
+    position: absolute;
+    left: 0;
+    bottom: .5em;
+}
+header p{
+    font-size: 1.3em;
+}
+.first-block-after-header{
+    margin-top: 6.5em;
+}
+

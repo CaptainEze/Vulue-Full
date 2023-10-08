@@ -1,0 +1,25 @@
+header{
+    border: unset;
+    height: 3em;
+}
+main{
+    padding: 0 1em;
+}
+.head{
+    font-family: fnt-01;
+}
+.head .top{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.head .sub{
+    font-size: .7em;
+    margin-bottom: .5em;
+}
+
+.body .t-zone{
+    /* display: block; */
+    padding: 1em;
+    text-align: left;
+    font-size: 1em;
+}

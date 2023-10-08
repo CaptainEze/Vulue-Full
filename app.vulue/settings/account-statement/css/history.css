@@ -1,0 +1,100 @@
+header{
+    border: unset;
+}
+.pre{
+    padding: .3em 2.3em;
+    border-bottom: 1px solid #eef;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 2.6em;
+}
+.pre button{
+    gap: .5em;
+    align-items: center;
+}
+main{
+    margin-top: 5em !important;
+    padding: 0 1.7em;
+}
+
+
+.range-cont .range-ind{
+    font-size: .6em;
+    font-family: fnt-01;
+}
+.range-cont .date-range{
+    border: 1px solid #eef;
+    border-radius: .4em;
+    padding: .2em;
+    margin: .2em;
+    font-size: .8em;
+}
+
+.vol-cont{
+    width: 80%;
+    margin-top: .5em;
+    font-family: fnt-01;
+}
+.ttx{
+    font-size: .7em;
+}
+.vol-unt .amt{
+    font-size: .9em;
+}
+
+
+.main-histories{
+    margin-top: 1.3em;
+}
+.hist-itm{
+    padding: .5em 0;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: fit-content fit-content;
+    grid-template-columns: 50% 50%;
+    row-gap: .3em;
+
+    border-bottom: 1px solid #eef;
+    font-family: fnt-01;
+}
+.hist-itm .u{
+    font-size: 1em;
+}
+.hist-itm .d{
+    font-size: .7em;
+}
+.hist-itm .r{
+    text-align: right;
+}
+.hist-itm .s{
+    color: #09cf09;
+}
+.hist-itm .f{
+    color: #e72020;
+}
+.hist-itm .p{
+    color: #c0e830;
+}
+.hist-itm .t{
+    color: #e720d0;
+}
+.hist-itm .re{
+    color: #2012ba;
+}
+
+
+
+.parameter-cont{
+    padding: .1em 2.5em;
+    margin-top: 5em;
+
+}
+.parameter{
+    padding: .5em;
+    border: 1px solid #eef;
+    border-radius: .3em;
+    font-size: .7em;
+    margin: .4em;
+    font-family: fnt-01;
+}
