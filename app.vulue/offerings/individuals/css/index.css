@@ -1,0 +1,52 @@
+main{
+    font-family: fnt-01;
+}
+#info1{
+    font-size: 1.8em;
+    padding: 0 .9em;
+}
+#components{
+    width: 85%;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    column-gap: 5%;
+    row-gap: .7em;
+}
+#components .offering{
+    width: 100%;
+    height: fit-content;
+}
+#components .component-image{
+    height: calc(85vw * .45);
+    background-size: 100%;
+    margin-bottom: 1em;
+    border-radius: .8em;
+    background-repeat: no-repeat;
+}
+#mir{
+    background-image: url('../../../../assets/images/banners/mirror.png');
+}
+#lck{
+    background-image: url('../../../../assets/images/banners/lck.png');
+}
+#stk{
+    background-image: url('../../../../assets/images/banners/stocks.png');
+
+}
+#mu{
+    background-image: url('../../../../assets/images/banners/mut.png');
+}
+#com{
+    background-image: url('../../../../assets/images/banners/com.png');
+}
+#abs{
+    background-image: url('../../../../assets/images/banners/abs.png');  
+}
+#alt{
+    background-image: url('../../../../assets/images/banners/alt.png');
+    
+}
+#components .component-text{
+    font-size: .6em;
+}

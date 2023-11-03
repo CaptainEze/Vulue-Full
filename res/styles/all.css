@@ -46,7 +46,7 @@
     background-color: #020205;
 }
 .bg-ash{
-    background-color: #40494e;
+    background-color: #263238;
 }
 .bg-blue{
     background-color: #4444ff;
@@ -107,6 +107,10 @@
 .txt-blan{
     color: #1EB0C8;
 }
+
+.txt-bl{
+    color: #00D7FB;
+}
 .txt-blue-green{
     color: #00aaff;
 }
@@ -130,6 +134,9 @@
 }
 .txt-yellow{
     color: #b3ce06;
+}
+.txt-yellow-alt{
+    color: #7C8424;
 }
 .txt-highlight-blue{
     text-shadow: 0 0 7px #1313df inset;
@@ -232,8 +239,14 @@ header{
     padding: .7em;
     z-index: 99;
 }
+.prods{
+    align-items: center;
+}
 .header-no-nav{
     padding: .7em;
+}
+#org-id{
+    gap: .7em;
 }
 #org-logo{
     background-image: url('../../assets/images/logo/logo.png');
@@ -242,11 +255,49 @@ header{
 }
 #org-name{
     font-size: 1em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: fnt-01;
+    font-weight: 700;
+}
+.prods #org-name{
+    font-size: 1.2em;
+}
+.prods .mtf-icn{
+    width: 2em;
+    height: 3.5em;
+    /* border: 1px solid green; */
+    background-image: url('../../assets/images/icons/mtf.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.prods{
+    padding-bottom: 2em;
 }
 #menu-open-btn{
     padding: .7em;
 }
+.prods #menu-open-btn{
+    font-size: .7em;
+    align-items: center;
+}
+#prods-back-btn{
+    position: absolute;
+    bottom: .8em;
+}
+.prod-special-nav{
+    padding: 0 .6em;
+}
+.prod-special-nav .item{
+    color: inherit;
+    padding-bottom: .5em;
+    width: 20%;
+    font-size: .8em;
+    font-weight: lighter;
+}
+.prod-special-nav .on{
+    border-bottom: 1px solid #637d89;
+
+}
+
 #menu-open-btn:hover{
     color: #0000dd;
 }
@@ -497,3 +548,15 @@ header{
     border-radius: 50%;
 }
 
+#ad-container{
+    width: 100%;
+    padding: .3em;
+}
+#ad-container a{
+    width: 100%;
+    display: inline-block;
+
+}
+#ad-container img{
+    width: 100%;
+}

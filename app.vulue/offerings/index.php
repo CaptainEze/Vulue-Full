@@ -10,6 +10,18 @@
 ?>
     <main class="first-block-after-header">
         <p class="txt-white txt-bold" id="info1">Our offerings</p>
+        <section id="components" class="flx flx-col">
+            <div class="offering">
+                <span class="link-to"><a href="individuals" class="flx flx-stretch no-decor txt-white"><span>Investment Management<br>For Individual Clients</span> <i class="fa fa-angle-right"></i></a></span>
+            </div>
+            <div class="offering">
+                <span class="link-to"  ><a href="" class="flx flx-stretch no-decor txt-white"><span>For Institutional<br>Clients</span> <i class="fa fa-angle-right"></i></a></span>
+            </div>
+            <div class="offering">
+                <span class="link-to"  ><a href="" class="flx flx-stretch no-decor txt-white"><span>Market<br>Technologies</span> <i class="fa fa-angle-right"></i></a></span>
+            </div>
+
+        </section>
     </main>
 
 
