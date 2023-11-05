@@ -289,7 +289,7 @@ if (isset($_GET['action'])) {
                 </div>
                 <div id="main-overview-list" class="">
 
-                    <a href="#" class="txt-white no-decor ov-main glass std-glass flx flx-stretch">
+                    <a href="strat-view.php" class="txt-white no-decor ov-main glass std-glass flx flx-stretch">
                         <div class="left">
 
                         </div>

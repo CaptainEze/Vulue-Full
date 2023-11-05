@@ -1,9 +1,13 @@
 main{
     padding: .5em;
 }
+*{
+    font-family: fnt-01 !important;
+}
 .ver-status{
     font-family: fnt-01;
     font-size: 1.5em;
+    text-align: center;
 }
 .cl-det{
     margin: .5em 0;
@@ -27,12 +31,23 @@ main{
     backdrop-filter: blur(10px);
 }
 
+.ver-actions a{
+    display: block;
+    width: 100%;
+}
 .ver-actions button{
-    border: 1px solid #eee;
+    display: block;
+    width: 100%;
     margin: .5em 0;
     font-size: 1em;
-    padding: 1em;
+    padding: 1em;    
     border-radius: .7em;
+    text-align: left;
+    position: relative;
+}
+.ver-actions button i{
+    position: absolute;
+    right: 1em;
 }
 
 .ver-form{

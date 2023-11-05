@@ -383,7 +383,7 @@ header{
 
 /* ------- standard form styling ------- */
 .auth-standard-form{
-    padding: .5em 1em;
+    padding: .5em .3em;
 }
 .auth-standard-form .txt-field{
     height: fit-content;

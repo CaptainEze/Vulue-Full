@@ -1,0 +1,95 @@
+body{
+    background: linear-gradient(180deg, #46677F 0%, #050112 36.4%, #08090A 60.72%) !important;
+    padding: 1em;
+    font-family: fnt-01;
+}
+.first-block-after-header{
+    margin-top: 6em !important;
+}
+
+.ov-main{
+    box-shadow: 0px 1px 20px 0px #E3DEFF1A inset;
+    box-shadow: 0px 2px 2px 0px #9A92D205 inset;
+    box-shadow: 0px -82px 10px -64px #6044900A inset;
+    box-shadow: 0px 0px 15px #ffffff2f inset;
+    border-radius: .5em;
+    padding: .5em;
+    margin: .5em 0;
+}
+.ov-main .left{
+    width: 4em;
+    height: 4em;
+    background-color: #ffffff65;
+    border-radius: .5em;
+}
+.ov-main .mid{
+    padding-top: 1em;
+    text-align: center;
+    position: relative;
+}
+.ov-main .topic{
+    font-size: .7em;
+    margin-bottom: 1em;
+}
+.ov-main .tags-c{
+    gap: 1em;
+    position: absolute;
+    bottom: 0;
+}
+.ov-main .tag:nth-child(1){
+    font-size: .55em;
+}
+.ov-main .tag:nth-child(2){
+    font-size: .5em;
+}
+.ov-main .right{
+    padding-left: 1em;
+    position: relative;
+}
+.ov-main .inf{
+    align-items: center;
+    gap: .5em;
+}
+.ov-main .inf button{
+    border: 1px solid #455A64;
+    border-radius: .4em;
+    padding: .3em;
+    font-size: .7em;
+}
+.ov-main .stat-label{
+    display: inline-block;
+    width: .9em;
+    height: .9em;
+    /* background-color: red; */
+    border-radius: 50%;
+    background-color: green;
+    border: 4px solid #6F6F70;
+}
+.ov-main .trend{
+    font-size: .5em;
+    position: absolute;
+    bottom: .5em;
+    right: 3em;
+}
+.ov-main .trend-graph{
+    width: 100%;
+    position: absolute;
+    background-color: #77ff7709;
+    height: 100%;
+    left: 0;
+    color: #ffffff11;
+    text-align: center;
+    font-size: .8em;
+}
+.ov-main .trend-graph span{
+    transform: rotate(45deg);
+}
+
+#main-content-info{
+    font-size: .6em;
+    padding: 1em 0;
+    margin: 1em auto;
+}
+#main-content-info p{
+    margin: .8em 0;
+}

@@ -1,5 +1,29 @@
 <?php
+    session_start();
+    require_once('../../config/serverconfig.php');
     require_once('../../server/config.php');
+    require_once('../../classes/process.php');
+    require_once('../../classes/users.php');
+    
+    $process = new process;
+    
+    
+    $loginStatus = $process->verifyLoggedIn();
+    if ($loginStatus[0]) {
+        $loggedIn = $loginStatus[0];
+        $usr = $loginStatus[1];
+        $id = $_SESSION['user_id'];
+        $user = new UserFull($id);
+        // check email verification
+        if($user->eVerified == 0){
+            $process->redirect("../../auth/register.php?q=ver&em=$usr");
+        }
+    } else {
+        $process->destroySession();
+        $process->redirect('../../auth/login.php');
+    }
+
+    
     $pageTitle="Dashboard";
     $pathToImages="../../assets/images";
     $pathToStyles="../../res/styles";

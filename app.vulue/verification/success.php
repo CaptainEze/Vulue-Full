@@ -14,11 +14,13 @@ $site = SITEURL;
     <?php
         if($tierNum != 2){
             echo <<<_END
-            <p class="txt-white-red ver-status">Account Verified!</p>
+            <p class="txt-white ver-status txt-thick">Registration Successful</p>
+            <p class="txt-deep-blue">Account Registered</p>
+
             _END;
         }else{
             echo <<<_END
-            <p class="txt-white-red ver-status">Unboarding Complete</p>
+            <p class="txt-white-red ver-status txt-thick">You’re All Set </p>
             _END;
         }
     ?>
@@ -33,30 +35,30 @@ $site = SITEURL;
         <?php
             if($tierNum != 2){
                 echo <<<_END
-                <button class="flx flx-stretch bg-trans txt-off-white" xen="to-next"><span>Continue onboarding</span><i class="fa fa-angle-right"></i></button>
+                <a href="completeOnboarding.php" class="no-decor"><button class="bg-blue brdls txt-off-white" xen="to-next"><span>Continue onboarding</span><i class="fa fa-angle-right"></i></button></a>
                 _END;
             }
         ?>
         
-        <button class="flx flx-stretch bg-trans txt-off-white" xen="to-dash"><span>Go back to Dashboard</span><i class="fa fa-angle-right"></i></button>
+        <a href="../dashboard/" class="no-decor"><button class="bg-blue brdls txt-off-white" xen="to-dash"><span>Go back to Dashboard</span><i class="fa fa-angle-right"></i></button></a>
     </div>
 </main>   
 </body>
 <script src="../../../vendors/xenon/xenon-alpha0.0.1.js"></script>
 <script src="../../res/scripts/nav.js"></script>
 <script>
-    <?php
-        if($tierNum != 2){
-            echo <<<_END
-                Xen.xenon("#to-dash").bind('click',()=>{
-                    window.location = "$site/app.vulue/verification/completeOnboarding.php";
-                })
-            _END;
-        }
-    ?>
-    Xen.xenon("#to-dash").bind('click',()=>{
-        window.location = "<?php echo SITEURL."/app.vulue" ?>";
-    })
+    // <?php
+    //     if($tierNum != 2){
+    //         echo <<<_END
+    //             Xen.xenon("#to-dash").bind('click',()=>{
+    //                 window.location = "$site/app.vulue/verification/completeOnboarding.php";
+    //             })
+    //         _END;
+    //     }
+    // ?>
+    // Xen.xenon("#to-dash").bind('click',()=>{
+    //     window.location = "<?php echo SITEURL."/app.vulue" ?>";
+    // })
 
 </script>
 </html>

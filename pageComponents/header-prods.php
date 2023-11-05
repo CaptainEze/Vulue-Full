@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="<?php echo ($pathToStyles); ?>/animsclasses.css">
     <link rel="stylesheet" href="<?php echo($pathToLocStyle);?>">
     <script src="<?php echo($pathToScripts) ?>/components.js"></script>
+    <script src="<?php echo ($pathToVendors); ?>/jquery/jquery-3.3.1.min.js"></script>
+
 </head>
 <body xen="body" class="bg-primary">
 
