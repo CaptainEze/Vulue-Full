@@ -70,7 +70,9 @@ switch ($requestingPage) {
                         $id = $res['c_id'];
                     }
                     $user = new UserFull($id);
-                    $user ->verifyEmail();
+                    $_SESSION['verifem'] = $email;
+                    $clId = $processRequest->generateClientId($id);
+                    $user ->verifyEmail($clId);
                     $response = array('status'=>1,'message'=>"Email verification success please wait...");
                 }else{
                     $response = array('status'=>0,'message'=>"Incorrect OTP provided");

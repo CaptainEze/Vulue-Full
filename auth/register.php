@@ -257,8 +257,8 @@ require_once('../pageComponents/header-no-nav.php');
 
 
     <?php 
-        if(isset($_GET['q']) && isset($_GET['em'])){
-            $_em = $_GET['em'];
+        if(isset($_GET['q']) && isset($_SESSION['verifem'])){
+            $_em = $_SESSION['verifem'];
             echo "requestOtp('$_em')";
         }
     ?>
@@ -374,7 +374,7 @@ require_once('../pageComponents/header-no-nav.php');
                 console.log(response.message, 1);
                 // success
                 // take to verification
-                window.location.href='../app.vulue/verification/tier1.php';
+                window.location.href='../app.vulue/verification/tier1.php?';
 
             } else {
                 console.log('An error occured please try again', 0);

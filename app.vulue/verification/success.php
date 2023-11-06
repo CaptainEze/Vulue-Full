@@ -1,5 +1,4 @@
 <?php
-require_once('../../server/config.php');
 $pageTitle="Verification Successful";
 $pathToImages="../../assets/images";
 $pathToStyles="../../res/styles";
@@ -15,17 +14,18 @@ $site = SITEURL;
         if($tierNum != 2){
             echo <<<_END
             <p class="txt-white ver-status txt-thick">Registration Successful</p>
-            <p class="txt-deep-blue">Account Registered</p>
-
+            <p class="txt-deep-blue aft-ver-status">Account Registered</p>
+            <div class="txt-white cl-det flx"><span>Client ID: </span><span>$clId</span><button class="fa fa-copy bg-trans brdls txt-white"></button></div>
             _END;
         }else{
             echo <<<_END
             <p class="txt-white-red ver-status txt-thick">You’re All Set </p>
+
             _END;
         }
+
+        
     ?>
-    
-    <div class="txt-white cl-det flx"><span>Client ID: </span><span>XXXX XXX XXX</span><button class="fa fa-copy bg-trans brdls txt-white"></button></div>
 
     <div class="ver-avatar-container">
         <div class="ver-avatar bg-image-hold"></div>

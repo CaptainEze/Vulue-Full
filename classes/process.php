@@ -38,5 +38,11 @@ class process{
         }
         session_destroy();
     }
+    public function generateClientId($_cId){
+        $sn = $_cId+2568;
+        // year rand - cId+2568 - minuites rand
+        $esc = date('y').rand(10,99).$sn.date('H').rand(10,99);
+        return "$esc";
+    }
 }
 ?>

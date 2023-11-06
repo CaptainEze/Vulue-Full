@@ -1,6 +1,6 @@
 <?php
 require_once('../../server/config.php');
-$pageTitle="Tier 2 verification - Vulue";
+$pageTitle="Complete Onboarding";
 $pathToImages="../../assets/images";
 $pathToStyles="../../res/styles";
 $pathToVendors="../../vendors";

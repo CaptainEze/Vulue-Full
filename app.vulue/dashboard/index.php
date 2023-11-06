@@ -16,7 +16,8 @@
         $user = new UserFull($id);
         // check email verification
         if($user->eVerified == 0){
-            $process->redirect("../../auth/register.php?q=ver&em=$usr");
+            $_SESSION['verifem'] = $usr;
+            $process->redirect("../../auth/register.php?q=ver");
         }
     } else {
         $process->destroySession();

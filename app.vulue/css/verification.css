@@ -4,18 +4,27 @@ main{
 *{
     font-family: fnt-01 !important;
 }
+
 .ver-status{
     font-family: fnt-01;
     font-size: 1.5em;
     text-align: center;
 }
+.aft-ver-status{
+    text-align: center;
+    font-size: .7em;
+}
 .cl-det{
-    margin: .5em 0;
-    width: 70vw;
+    margin: .5em auto;
+    width: fit-content;
+    align-items: center;
+}
+.cl-det span:nth-child(1){
+    font-size: .7em;
 }
 .cl-det span:nth-child(2){
-    margin: 0 1em;
-    font-size: .8em;
+    margin: 0 .8em;
+    font-size: .7em;
 }
 .ver-avatar-container{
     margin: 16vh 0;
