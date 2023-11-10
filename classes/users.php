@@ -78,6 +78,7 @@ class UserFull extends User
         $this->id = $uId;
         $this->email = $data['email'];
         $this->eVerified = $data['e_verif'];
+        $this->accTyp = $data['acc_typ'];
 
 
         error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE & ~E_DEPRECATED);

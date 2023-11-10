@@ -34,7 +34,7 @@
 
 /* ------- backgrounds ------- */
 .bg-primary{
-    background: linear-gradient(135deg,#10104A,#10101F,#10101F,#111);
+    background-color:  #07022D;
 }
 .bg-secondary{
     background: linear-gradient(180deg, #1570CF 0%, #0B3A6B 0.01%, #08090A 46.07%);
@@ -431,7 +431,7 @@ header{
     position: absolute;
     top: .8em;
     left: calc(50% - 1em);
-    background-color: #10101F;
+    /* background-color: #10101F; */
 }
 .call-to-agreemnt{
     width: fit-content;

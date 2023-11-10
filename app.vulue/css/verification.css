@@ -1,10 +1,16 @@
+body{
+    background-color: #0D022D !important;
+}
 main{
     padding: .5em;
 }
 *{
     font-family: fnt-01 !important;
 }
-
+.pr-inf{
+    margin-bottom: 1em;
+    gap: 0;
+}
 .ver-status{
     font-family: fnt-01;
     font-size: 1.5em;
@@ -15,9 +21,13 @@ main{
     font-size: .7em;
 }
 .cl-det{
-    margin: .5em auto;
     width: fit-content;
     align-items: center;
+}
+.cnnc{
+    text-align: left !important;
+    width: 100%;
+    margin: .1em auto !important;
 }
 .cl-det span:nth-child(1){
     font-size: .7em;
@@ -60,13 +70,13 @@ main{
 }
 
 .ver-form{
-    padding: 1em .1em;
+    padding: 1em .3em;
 }
 .t2-ver-inp{
     width: 100%;
-    padding: 1em .7em;
-    border: 1px solid #eee;
-    border-radius: .7em;
+    padding: .7em 1em;
+    border: 1px solid #455A64;
+    border-radius: .5em;
     margin-bottom: 1em;
     /* letter-spacing: .1em; */
     font-size: 1em;
@@ -76,14 +86,29 @@ main{
     outline: none;
     box-shadow: 0 0 3px inset;
 }
-
+.inp-haul{
+    position: relative;
+    height: fit-content;
+}
+.inp-haul .custom-placeholder-text{
+    position: absolute;
+    padding: 0 .5em;
+    top: -.7em;
+    left: 1.3em;
+    font-size: .7em;
+}
+.inp-haul .extra-icon{
+    position: absolute;
+    right: 1em;
+    top: .7em;
+}
 .file-input{
     width: 60vw;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 .file-input .head{
-    font-size: 1.1em;
-    margin-bottom: 1em;
+    font-size: 1em;
+    margin-bottom: .8em;
     width: 95vw;    
 }
 .file-input .info{
@@ -101,15 +126,37 @@ main{
 }
 
 .styled-file-picker{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
+    /* border: 1px solid red; */
+    align-items: center;
+    gap: .5em;
 }
 .styled-file-picker span:nth-child(2){
-    font-size: .8em;
-    margin-left: .5em;
+    font-size: .7em;
+    margin-left: .4em;
 }
 .t2-label .file-picker{
     opacity: 0;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    /* border: 1px solid black; */
+}
+.custom-options-cont{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 900099;
+    border: 1px solid white;
+}
+.opts{
+    width: 70%;
+    margin: 0 auto;
+    height: 70%;
+    background-color: red;
+    
 }

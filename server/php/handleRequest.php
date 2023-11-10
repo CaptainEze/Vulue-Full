@@ -43,7 +43,7 @@ switch ($requestingPage) {
             else if (!$processRequest->validateSame($pass,$cpass)) {
                 $response = array('status'=>0,'input'=>"cpassword",'message'=>"Password and Confirm are different");
             } 
-            else{
+             else{
                 $pass = $processRequest->hashStr($pass);
                 $userFunctions->register($email,$pass,$accType);
                 
@@ -67,6 +67,7 @@ switch ($requestingPage) {
                         $res = $liveDb->execQuery("SELECT c_id FROM users WHERE email = '$email'");
                         $res->data_seek(1);
                         $res = $res->fetch_array(MYSQLI_ASSOC);
+                        // print_r($res);
                         $id = $res['c_id'];
                     }
                     $user = new UserFull($id);

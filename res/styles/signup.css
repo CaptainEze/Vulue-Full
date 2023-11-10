@@ -1,6 +1,9 @@
 *{
     font-family: fnt-01 !important;
 }
+body{
+    background-color: #0D022D !important;
+}
 #main {
     padding: 3.5em 1em;
 }
@@ -26,6 +29,18 @@
     padding: 1em;
     border-radius: .5em;
     font-size: .6em;
+}
+.log{
+    font-size: .6em;
+    margin-top: -.8em;
+    margin-bottom: .3em;
+    display: none;
+}
+.err{
+    font-size: .7em;
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .3em;
 }
 
 #login-form-selection-type-holder {

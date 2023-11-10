@@ -6,6 +6,20 @@ $pathToStyles = "../res/styles";
 $pathToVendors = "../../vendors";
 $pathToLocStyle = "../res/styles/login.css";
 require_once('../pageComponents/header-no-nav.php');
+if(isset($_GET['af'])){
+    
+    switch ($_GET['af']) {
+        case 'ver':
+            $nextTo = "../app.vulue/verification/completeOnboarding.php";
+            break;
+        
+        default:
+            $nextTo = "../app.vulue/dashboard";
+            break;
+    } 
+} else{
+    $nextTo = "../app.vulue/dashboard";
+}
 ?>
 <main id="main" class="first-block-after-header">
     <div class="pre-form-info txt-white txt-thick">
@@ -21,13 +35,14 @@ require_once('../pageComponents/header-no-nav.php');
         <div>
             <a href="#" class="no-decor txt-vlblue">Forgot Password&#63;</a>
         </div>
+        <p class="log txt-red err" xen="err-log"></p>
         <button type="button" class="submit txt-off-white bg-blue txt-thick" xen="login-btn">Login</button>
         <div class="flx flx-rw flx-stretch">
             <span class="txt-off-white">Don&#x27;t have an account&#63;</span>
             <a href="<?php echo (SITEURL . "/auth/register.php"); ?>" class="no-decor txt-vlblue">Signup</a>
         </div>
         <div class="misc txt-off-white txt-thick">
-            <p>Or</p>
+            <p class="bg-primary">Or</p>
         </div>
         <div class="google-auth">
             <button type="button" class="brdls bg-trans flx flx-rw"><span class="bg-image-hold"></span><span class="txt-off-white txt-thick">Login with Google</span></button>
@@ -37,6 +52,7 @@ require_once('../pageComponents/header-no-nav.php');
 </body>
 <script src="../../vendors/xenon/xenon-alpha0.0.1.js"></script>
 <script src="../res/scripts/passInpTgl.js"></script>
+<script src="../res/scripts/formLog.js"></script>
 <script>
     const emailInput = Xen.xenon('#in-email');
     const passwordInput = Xen.xenon('#in-pass');
@@ -85,15 +101,18 @@ require_once('../pageComponents/header-no-nav.php');
                 console.log(response);
                 if (response.input == "email" && response.status == 0) {
                     // log(response.message, 0);
+                    tempFormLog(Xen.xenon('#err-log'),response.message,2000);
                 } else if (response.input == "password" && response.status == 0) {
                     // log(response.message, 0);
+                    tempFormLog(Xen.xenon('#err-log'),response.message,2000);
                 } else if (response.input == "details" && response.status == 1) {
                     // log(response.message, 1);
                     // success
-                    window.location.href = "../app.vulue/dashboard";
+                    window.location.href = "<?php echo $nextTo; ?>";
 
                 } else {
                     // log('An error occured please try again', 0);
+                    tempFormLog(Xen.xenon('#err-log'),response.message,2000);
                 }
             }).fail(function(error) {
                 // load(0)

@@ -1,3 +1,9 @@
+*{
+    font-family: fnt-01;
+}
+body{
+    background-color: #0D022D !important;
+}
 #main{
     padding: 3.5em 1em;
 }
@@ -12,4 +18,9 @@
 }
 #pass-hide:hover{
     color: #00aaff;
+}
+.err{
+    font-size: .9em;
+    text-align: center;
+    margin: .5em auto .3em auto;
 }

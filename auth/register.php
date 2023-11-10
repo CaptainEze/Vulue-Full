@@ -24,9 +24,11 @@ require_once('../pageComponents/header-no-nav.php');
     </div>
     <form class="card glass thin-glass auth-standard-form">
         <section class="form-part1" xen="form1 first-part">
-            <input class="txt-field txt-off-white" type="email" placeholder="Email address" maxlength="30" minlength="9" required xen="in-email" autocomplete="email" />
+            <input class="txt-field txt-off-white" type="email" placeholder="Email address" maxlength="30" mipnlength="9" required xen="in-email" autocomplete="email" />
+            <p class="log txt-red" xen="em-log"></p>
             <input class="txt-field txt-off-white" type="text" placeholder="Password" id="password" maxlength="16" minlength="8" required xen="in-pass" autocomplete="new-password" />
             <input class="txt-field txt-off-white" type="text" placeholder="Confirm password" id="cpassword" maxlength="16" minlength="8" required xen="in-cpass" autocomplete="off" />
+            <p class="log txt-red" xen="cpas-log"></p>
 
             <div class="call-to-agreemnt flx flx-stretch">
                 <label for="agree" class="txt-off-white agree-container">
@@ -35,13 +37,14 @@ require_once('../pageComponents/header-no-nav.php');
                 </label>
                 <span class="agr txt-off-white"> I agree with the <a href="#" class="no-decor txt-vlblue">terms and conditions</a></span>
             </div>
+            <p class="log txt-red err" xen="err-log"></p>
             <button type="button" class="submit txt-off-white bg-blue txt-thick" xen="go-next">Create Account</button>
             <div class="flx flx-rw flx-stretch">
                 <span class="txt-off-white">Already have an account&#63;</span>
                 <a href="<?php echo (SITEURL . "/auth/login.php"); ?>" class="no-decor txt-vlblue">Login</a>
             </div>
             <div class="misc txt-off-white txt-thick">
-                <p>Or</p>
+                <p class="bg-primary">Or</p>
             </div>
             <div class="google-auth">
                 <button type="button" class="brdls bg-trans flx flx-rw"><span class="bg-image-hold"></span><span class="txt-off-white txt-thick">Login with Google</span></button>
@@ -94,7 +97,7 @@ require_once('../pageComponents/header-no-nav.php');
 </main>
 </body>
 <script src="../../vendors/xenon/xenon-alpha0.0.1.js"></script>
-
+<script src="../res/scripts/formLog.js"></script>
 
 <script>
     //implementation for form validation
@@ -198,12 +201,12 @@ require_once('../pageComponents/header-no-nav.php');
                 // load();
                 if (response.input == "email" && response.status == 0) {
                     // log(response.message, 0);
-                } else if (response.input == "password" && response.status == 0) {
-                    // log(response.message, 0);
+                    tempFormLog(Xen.xenon('#em-log'),response.message,2000);
                 } else if (response.input == "cpassword" && response.status == 0) {
-                    // log(response.message, 0);
+                    tempFormLog(Xen.xenon('#cpas-log'),response.message,2000);
                 } else if (response.input == "all" && response.status == 0) {
                     // log(response.message, 0);
+                    tempFormLog(Xen.xenon('#err-log'),response.message,2000);
                 } else if (response.input == "details" && response.status == 1) {
                     // success
                     // log('Registeration success please wait', 1);
@@ -211,11 +214,13 @@ require_once('../pageComponents/header-no-nav.php');
 
                 } else {
                     // log('please check what you are doing', 0);
+                    tempFormLog(Xen.xenon('#err-log'),response.message,2000);
                 }
             }).fail(function(error) {
                 // load()
-                console.log(error);
+                // console.log(error);
                 // log('An error occured please try again', 0);
+                tempFormLog(Xen.xenon('#err-log'),response.message,2000);
                 return;
             });
     }
