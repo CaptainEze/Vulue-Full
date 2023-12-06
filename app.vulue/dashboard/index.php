@@ -24,6 +24,18 @@
         $process->redirect('../../auth/login.php');
     }
 
+    $userInfo = $user->getKycDetails();
+    if($userInfo->num_rows=='0'){
+        $process->redirect('../verification/completeOnboarding.php');
+    } else{
+        $userInfo->data_seek(1);
+        $userInfo = $userInfo->fetch_array(MYSQLI_ASSOC);
+        if($userInfo['kyc_approved']=='1'){
+
+        } else $process->redirect('../verification/completeOnboarding.php');
+
+    }
+
     
     $pageTitle="Dashboard";
     $pathToImages="../../assets/images";
@@ -40,6 +52,9 @@
                     <span class="usr-avatar-small"></span>
                     <span class="usr-greeting txt-highlight-blue">Good Morning, Ekwe</span>
                 </span>
+                <?php 
+                print_r($userInfo);
+                ?>
                 
                 <button class="brdls bg-trans txt-white" id="notific-btn">
                     <span id="notific-dot" class="bg-blue"></span>

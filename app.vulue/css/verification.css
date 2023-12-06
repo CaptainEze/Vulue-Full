@@ -102,6 +102,7 @@ main{
     right: 1em;
     top: .7em;
 }
+
 .file-input{
     width: 60vw;
     margin-bottom: 1em;
@@ -144,20 +145,30 @@ main{
     top: 0;
     /* border: 1px solid black; */
 }
-.custom-options-cont{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 900099;
-    border: 1px solid white;
-    
+
+.custm-select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
-.opts{
-    width: 70%;
-    margin: 0 auto;
-    height: 70%;
-    background-color: red;
-    
+.error{
+    font-size: .6em;
+    padding-left: .5em;
+    display: block;
+    text-align: right;
+}
+.ctmp-cont{
+    text-align: center;
+    margin-top: 20vh;
+    padding: 1em;
+}
+.ctmp-cont p{
+    font-size: .7em;
+    margin: 2em;
+    font-weight: lighter;
+}
+.ctmp-cont p:nth-child(1){
+    margin-bottom: 3em;
+    font-weight: 600;
+    font-size: 1.2em !important;
 }

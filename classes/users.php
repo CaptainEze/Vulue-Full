@@ -79,6 +79,7 @@ class UserFull extends User
         $this->email = $data['email'];
         $this->eVerified = $data['e_verif'];
         $this->accTyp = $data['acc_typ'];
+        $this->clId = $data['cl_id'];
 
 
         error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE & ~E_DEPRECATED);
@@ -116,8 +117,29 @@ class UserFull extends User
             }
         }
     }
+    public function updateKyc($arr){
+        switch ($this->accTyp) {
+            case '0':
+                $this->que("INSERT INTO `kyc` (`c_id`, `nationality`, `country_residence`, `state_residence`, `lga_residence`, `lga_origin`, `bvn`, `fn`, `ln`, `mn`, `gender`, `dob`, `employment_status`, `address`, `kyc_approved`) VALUES ('$this->id', '".$arr['nationality']."', '".$arr['countryOfResidence']."', '".$arr['stateOfResidence']."', '".$arr['lgaOfResidence']."', '".$arr['lgaOfOrigin']."', '".$arr['bvn']."', '".$arr['fName']."', '".$arr['lName']."', '".$arr['mName']."', '".$arr['gender']."', '".$arr['dob']."', '".$arr['employmentStatus']."', '".$arr['address']."','0',);");
+                return true;
+                break;
+            case '1':
+                $this->que("INSERT INTO `kyc` (`c_id`, `nationality`, `country_residence`, `state_residence`, `lga_residence`, `lga_origin`, `bvn`, `fn`, `ln`, `mn`,`gfn`, `gln`, `gmn`, `gender`, `dob`, `employment_status`, `address`, `kyc_approved`) VALUES ('$this->id', '".$arr['nationality']."', '".$arr['countryOfResidence']."', '".$arr['stateOfResidence']."', '".$arr['lgaOfResidence']."', '".$arr['lgaOfOrigin']."', '".$arr['bvn']."', '".$arr['fName']."', '".$arr['lName']."', '".$arr['mName']."','".$arr['gFName']."','".$arr['gLName']."','".$arr['gMName']."', '".$arr['gender']."', '".$arr['dob']."', '".$arr['employmentStatus']."', '".$arr['address']."','0');");
+                return true;
+                break;
+            default:
+                return false;
+                break;
+        }
+    }
 
+    public function verifyKycEnroll(){
+        return $this->que("SELECT 'kyc_submit_date','kyc_approved','kyc_approve_date' FROM kyc WHERE c_id = '$this->id'");
+    }
 
+    public function getKycDetails(){
+        return $this->que("SElECT * FROM kyc WHERE c_id = '$this->id'");
+    }
 
 
     // -------------------- no use section for now --------------------
